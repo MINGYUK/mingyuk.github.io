@@ -80,25 +80,19 @@
       "name": "Python",
       "level": "intermediate",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "pytorch"
-      ]
+      "keywords": ["pytorch"]
     },
     {
       "name": "R",
       "level": "intermediate",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "OHDSI"
-      ]
+      "keywords": ["OHDSI"]
     },
     {
       "name": "Linux",
       "level": "intermediate",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "multi-node cluster management"
-      ]
+      "keywords": ["multi-node cluster management"]
     }
   ],
   "languages": [
@@ -117,18 +111,12 @@
     {
       "name": "Information theory",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "pattern recognition",
-        "compression"
-      ]
+      "keywords": ["pattern recognition", "compression"]
     },
     {
       "name": "Statistical learning",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "causal inference",
-        "machine learning"
-      ]
+      "keywords": ["causal inference", "machine learning"]
     }
   ],
   "references": [
