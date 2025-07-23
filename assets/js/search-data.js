@@ -127,6 +127,17 @@ ninja.data = [{
             window.location.href = "/blog/2024/post-citation/";
           
         },
+      },{id: "post-generative-models",
+        
+          title: "Generative models",
+        
+        description: "Statistical understanding of generative models",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/generative-models/";
+          
+        },
       },{id: "post-a-post-with-pseudo-code",
         
           title: "a post with pseudo code",
