@@ -3,7 +3,7 @@ layout: post
 title: Generative models
 date: 2024-04-15 00:01:00
 description: Statistical understanding of generative models
-tags: 
+tags:
   - generative model
   - machine learning
 categories: machine-learning
@@ -15,7 +15,7 @@ pseudocode: true
 <figure class="align-center">
   <img src="https://www.altexsoft.com/static/blog-post/2023/11/38a2d58b-265c-49d8-bf58-353da4f6c6ac.jpg" alt="생성형 모델의 샘플 생성" style="width: 100%; height: auto;">
   <figcaption>출처: https://www.altexsoft.com/static/blog-post/2023/11</figcaption>
-</figure> 
+</figure>
 
 두개의 그룹으로 묶인 샘플들이 있다고 가정하자. 이 분포를 따르는 새로운 샘플을 어떻게 생성할 수 있을까? 우선은 단순히 두개의 분포를 나타내는 확률밀도함수를 기반으로 새로운 시행을 하는 것을 생각해볼 수 있다. 이 확률밀도함수를 추정하는 것이 생성형 모델을 학습하는 과정의 핵심 과제다.
 
@@ -36,7 +36,7 @@ explicit, implicit model로 생성형 모델을 분류할 수도 있다. 위에�
 
 이를 정량화하는 여러가지 metric이 있고, inception score나 Frechet inception distnace 등이 그 예시이다. Inception score는 앞서 말한대로 특정 클래스 내의 엔트로피는 높을수록, 특정 이미지의 클래스 라벨 엔트로피는 낮을수록 점수가 높다. Frechet inception distance는 생성된 이미지와 실제 이미지의 분포 간 거리를 따지는 방법이다.
 
-이제 GAN, diffusion model이 각각 어떻게 작동하는지, GAN부터 살펴보자. GAN은 Generative Adversarial Network의 약자다. 생성형 모델과 그 대항마(Adversarial) 네트워크가 서로 경쟁하면서 학습되는 구조를 가지고 있다. 따라서 명확한 확률분포함수를 정의하지 않는 implicit model이다. Generator network는 random noise를 input으로 받아 이미지를 생성하고, discriminator network는 이미지를 input으로 하여, 해당 이미지가 진짜 이미지인지 생성된 이미지인지 구분한다. 
+이제 GAN, diffusion model이 각각 어떻게 작동하는지, GAN부터 살펴보자. GAN은 Generative Adversarial Network의 약자다. 생성형 모델과 그 대항마(Adversarial) 네트워크가 서로 경쟁하면서 학습되는 구조를 가지고 있다. 따라서 명확한 확률분포함수를 정의하지 않는 implicit model이다. Generator network는 random noise를 input으로 받아 이미지를 생성하고, discriminator network는 이미지를 input으로 하여, 해당 이미지가 진짜 이미지인지 생성된 이미지인지 구분한다.
 
 <figure class="align-center">
   <img src="https://cdn.labellerr.com/GAN/All%20about%20GAN/vanillagan.webp" alt="GAN 모델의 아키텍처"
@@ -70,7 +70,7 @@ Autoencoder는 input data를 latent representation으로 나타내는 encoder, l
   <figcaption>출처: https://insights.daffodilsw.com/hs-fs/hubfs/Allen</figcaption>
 </figure>
 
-Diffusion model은 원본 이미지에 서서히 노이즈를 추가한 과정을 거꾸로 돌리는 법을 학습하는 모델이다. 임의의 이미지 X가 있을 때, Gaussian noise를 조금씩 추가하면 이미지 데이터셋의 분포는 Gaussian distribution이 된다. 이는 VAE에서 latent representation이 특정 분포를 따르게끔 유도되는 것과 유사하다. 
+Diffusion model은 원본 이미지에 서서히 노이즈를 추가한 과정을 거꾸로 돌리는 법을 학습하는 모델이다. 임의의 이미지 X가 있을 때, Gaussian noise를 조금씩 추가하면 이미지 데이터셋의 분포는 Gaussian distribution이 된다. 이는 VAE에서 latent representation이 특정 분포를 따르게끔 유도되는 것과 유사하다.
 
 단계적으로 진행되는 프로세스를 Markov chain이라고 하며, 단계가 길수록 연산 시간이 오래 걸릴 수밖에 없다. 이때 forward process의 경우 직접 모든 단계를 계산할 필요 없이 특정 단계의 X를 즉시 계산할 수 있어 시간이 오래 걸리지 않는다.
 
