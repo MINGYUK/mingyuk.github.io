@@ -7,7 +7,7 @@ first_name: Min-Gyu
 middle_name: #
 last_name: Kim
 contact_note: >
-  Use my email to contact me.
+  Email is preferred for contact.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Min-Gyu Kim's blog, a container for my projects, thoughts, and a lot of other stuffs.
 footer_text: >
@@ -15,7 +15,7 @@ footer_text: >
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: ⚛️ # page_favicon.png # ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://mingyuk.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -46,7 +46,7 @@ repo_trophies:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: true
 socials_in_search: true
 posts_in_search: true
@@ -95,7 +95,7 @@ pagination:
   enabled: true
 
 related_blog_posts:
-  enabled: true
+  enabled: false
   max_related: 5
 
 # Giscus comments (RECOMMENDED)
@@ -143,7 +143,7 @@ newsletter:
 
 collections:
   books:
-    output: true
+    output: false
   news:
     defaults:
       layout: post
@@ -191,6 +191,9 @@ exclude:
   - readme_preview/
   - vendor
   - .gitignore
+  - books/
+  - _pages/dropdown.md
+  - _pages/teaching.md
 keep_files:
   - CNAME
   - .nojekyll
