@@ -7,7 +7,11 @@ tags:
   - generative model
   - machine learning
 categories: machine-learning
-pseudocode: true
+pseudocode: false
+toc:
+  sidebar: false
+featured: false
+tabs: false
 ---
 
 생성형 모델에 대한 관심이 높다. 생성형 모델이란 무엇인지, 어떻게 작동하는지, 수학적으로 어떤 원리를 바탕으로 하는지 살펴보자.
