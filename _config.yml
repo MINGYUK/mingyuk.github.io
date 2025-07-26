@@ -193,7 +193,7 @@ exclude:
   - .gitignore
   - books/
   - _pages/dropdown.md
-  - _pages/teaching.md
+
 keep_files:
   - CNAME
   - .nojekyll
