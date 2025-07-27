@@ -5,7 +5,7 @@ permalink: /research-area/
 description: My research areas.
 nav: true
 nav_order: 3
-display_categories: [Digital pathology, Causal inference]
+display_categories: [Digital pathology, Causal inference, Learning-based representation]
 horizontal: false
 ---
 

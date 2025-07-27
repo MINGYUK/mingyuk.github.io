@@ -5,7 +5,7 @@ description: Efficient compression of WSIs
 img: assets/img/digital-pathology.jpg
 importance: 1
 category: Digital pathology
-related_publications: true
+related_publications: false
 ---
 
 Whole slide images (WSIs) are often in the gigabytes in size. The number of glass slides produced every year is increasing every year, leading to growing storage consumption. Large centers can have up to tens of thousands of scaned WSIs, which can accumulate to more than 100 terabytes. This is costing institutions in expanding and maintaining storage.

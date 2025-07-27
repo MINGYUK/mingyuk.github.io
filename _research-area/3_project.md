@@ -5,7 +5,7 @@ description: Weighting algorithms such as IPTW, employed for estimation of treat
 img: assets/img/causal-inference.png
 importance: 1
 category: Causal inference
-giscus_comments: true
+related_publications: false
 ---
 
 Causal inference is a process of identifying causal relationship. The gold standard for establishing causality is randomised-controlled trial (RCT). In reality, there are many barriers to conducting one: they are expensive, they take time, and sometimes the question at hand cannot be turned into an RCT.
