@@ -74,6 +74,11 @@ ninja.data = [{
           description: "Weighting algorithms such as IPTW, employed for estimation of treatment effects.",
           section: "Research-area",handler: () => {
               window.location.href = "/research-area/3_project/";
+            },},{id: "research-area-foundation-model-for-electronic-medical-records",
+          title: 'Foundation model for electronic medical records',
+          description: "Building a robust embedding model for tabular medical records",
+          section: "Research-area",handler: () => {
+              window.location.href = "/research-area/4_project/";
             },},{
         id: 'social-email',
         title: 'email',
