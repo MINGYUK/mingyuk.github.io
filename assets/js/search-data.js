@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "post-generative-models",
+        },{id: "post-ssh-터널링을-이용한-내부망-접근",
+        
+          title: "SSH 터널링을 이용한 내부망 접근",
+        
+        description: "SSH 터널링을 이용해 원격 데스크톱을 대체해보자.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/ssh-tunneling/";
+          
+        },
+      },{id: "post-generative-models",
         
           title: "Generative models",
         
