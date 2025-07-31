@@ -37,9 +37,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "post-stable-balancing-weights-literature-summary",
+        },{id: "post-stable-balancing-weights-literature-summary-work-in-progress",
         
-          title: "Stable balancing weights - literature summary",
+          title: "Stable balancing weights - literature summary (Work in progress)",
         
         description: "Stable balancing weights is a weighting algorithm used in causal inference. Let&#39;s review the original literature.",
         section: "Posts",
