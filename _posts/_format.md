@@ -6,11 +6,12 @@ description: Statistical understanding of generative models
 tags:
   - generative model
   - machine learning
-categories: machine-learning
+categories:
+  - machine-learning
+  - causal-inference
 pseudocode: false
 toc:
   sidebar: false
 featured: false
 tabs: false
 ---
-
