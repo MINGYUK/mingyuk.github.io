@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "post-ssh-터널링을-이용한-내부망-접근",
+        },{id: "post-stable-balancing-weights-literature-summary",
+        
+          title: "Stable balancing weights - literature summary",
+        
+        description: "Stable balancing weights is a weighting algorithm used in causal inference. Let&#39;s review the original literature.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/incomplete/";
+          
+        },
+      },{id: "post-ssh-터널링을-이용한-내부망-접근",
         
           title: "SSH 터널링을 이용한 내부망 접근",
         
