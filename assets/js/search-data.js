@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "post-stable-balancing-weights-literature-summary-work-in-progress",
+        },{id: "post-current-obstacles-in-using-real-world-evidence-and-policy-wise-efforts-to-overcome-them",
+        
+          title: "Current Obstacles in Using Real-World Evidence and Policy-wise Efforts to Overcome Them",
+        
+        description: "Article about real-world evidence from NEJM",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/real-world-evidence/";
+          
+        },
+      },{id: "post-stable-balancing-weights-literature-summary-work-in-progress",
         
           title: "Stable balancing weights - literature summary (Work in progress)",
         
