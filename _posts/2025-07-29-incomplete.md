@@ -45,7 +45,7 @@ $$\overline{Y}_N = \frac{\sum_{i=1}^{N}{Y_i}}{N}$$
 
 Assume the response (treatment) is missing completely at random (MCAR) in $\mathcal{S}$, then $$\hat{Y}_r = \frac{\sum_{i=1}^{r}{Y_i}}{r}$$ is an unbiased, consistent estimator of $\overline{Y}_N$.
 
-This is a strong assumption, and a more realistic assumption is non-respondents missing at random (MAR). Under this assumption, $Z_i$ and $Y_i$ are both related to observed covariates $X_i$ but not any unobserved covaraite $U_i$. (refer to "statistical analysis with missing data" by Little and Rubin)
+This is a strong assumption, and a more realistic assumption is non-respondents missing at random (MAR). Under this assumption, $Z_i$ and $Y_i$ are both related to observed covariates $X_i$ but not any unobserved covariate $U_i$. (refer to "statistical analysis with missing data" by Little and Rubin)
 
 In this case, $$\hat{Y}_{\mathit{w}} = \frac{\sum_{i=1}^{r}{\mathit{w}_iY_i}}{r}$$ is the unbiased, consistent estimator of $\overline{Y}_N$, given $\mathbf{w}$ appropriately adjusts for $X$. The most common way to calculate the weights is to fit a model that estimates the probability of responding (getting treatment) and inverting them. This is called the propensity score. An appealing aspect of using the propensity score is that it tends to balance the distribution of the observed covariates.
 
@@ -56,12 +56,12 @@ However, this is a stochastic property (relies on the law of large numbers), and
 Rather than finding the weights for predicting response/treatment, SBW directly finds the weights with minimal variance that balances the covariates. This is the optimization problem that describes SBW:
 
 $$
-\displaylines{
-\min_{w}{\|w - \bar{w}\|_2^2}\\
-\text{subject to } |\mathbf{w}^T\mathbf{X}_{\mathcal{R}_{p}} - \bar{X}_{\mathcal{S}_{p}}| \le \delta_p, p=1, ..., P\\
-\mathbf{1}^T\mathbf{w} = 1,\\
-\mathbf{w} \ge 0
-}
+\begin{align}
+\min_{w}&{\|w - \bar{w}\|_2^2}\\
+\text{subject to } &|\mathbf{w}^T\mathbf{X}_{\mathcal{R}_{p}} - \bar{X}_{\mathcal{S}_{p}}| \le \delta_p,\text{ } p=1, ..., P\\
+\mathbf{1}^T\mathbf{w} &= 1,\\
+\mathbf{w} &\ge 0
+\end{align}
 $$
 
-$\mathbf{w}$ is a vector of size $r$, and $\bar{w}$ is the mean value vector of the weights. $\delta_{p}$ is a hyperparameter, defined by the user. This optimization effectively minimizes the coefficient of variance of the weights while balancing the covariates. Also, by manipulating $X_{\mathcal{R}}$, the constraint can balance other statistics such as variance. To do this, we augment $X_{\mathcal{R}}$ with additional covariate matrix $$\tilde{X}_{\mathcal{R}} = X_{\mathcal{R}}^2$$.
+$\mathbf{w}$ is a vector of size $r$, and $\bar{w}$ is the mean value vector of the weights. $\delta_{p}$ is a hyperparameter, defined by the user. This optimization effectively minimizes the coefficient of variance of the weights while balancing the covariates. Also, by manipulating $$X_{\mathcal{R}_{\ast}}$$, the constraint can balance other statistics such as variance. To do this, we augment $$X_{\mathcal{R}_{\ast}}$$ with additional covariate matrix $$\tilde{X}_{\mathcal{R}} = X_{\mathcal{R}_p}^2$$. A similar augmentation can balance the mean and the variance of two covariates and their correlation.

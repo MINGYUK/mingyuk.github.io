@@ -14,4 +14,5 @@ toc:
   sidebar: false
 featured: false
 tabs: false
+pretty_table: false
 ---
