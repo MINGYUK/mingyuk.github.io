@@ -38,9 +38,9 @@ explicit, implicit model로 생성형 모델을 분류할 수도 있다. 위에�
 
 생성형 모델을 평가하는 방법은 여러가지가 있을 수 있는데, 우선 생성된 이미지의 품질을 따질 수 있다. 그런데 품질을 어떻게 평가할 수 있을까? 좋은 품질의 이미지라면, 특정 클래스에 속할 확률이 명확하게 높아야 한다. 예를 들어 가방에 대한 이미지를 생성했는데 해당 이미지가 품질이 뛰어나다면 쉽게 가방으로 분류되어야 한다는 뜻이다. 그런데 가방 이미지를 모두 똑같이 생성한다면, 좋은 모델이 아니다. 따라서 클래스 하나에 속하는 이미지에 대해서는 넓은 분포를 가져야 한다. 또 다른 방법으로는 생성된 이미지의 분포와 실제 이미지의 분포 간 유사도를 비교해볼 수도 있다.
 
-이를 정량화하는 여러가지 metric이 있고, inception score나 Frechet inception distnace 등이 그 예시이다. Inception score는 앞서 말한대로 특정 클래스 내의 엔트로피는 높을수록, 특정 이미지의 클래스 라벨 엔트로피는 낮을수록 점수가 높다. Frechet inception distance는 생성된 이미지와 실제 이미지의 분포 간 거리를 따지는 방법이다.
+이를 정량화하는 여러가지 metric이 있고, inception score나 Frechet inception distance 등이 그 예시이다. Inception score는 앞서 말한대로 특정 클래스 내의 엔트로피는 높을수록, 특정 이미지의 클래스 라벨 엔트로피는 낮을수록 점수가 높다. Frechet inception distance는 생성된 이미지와 실제 이미지의 분포 간 거리를 따지는 방법이다.
 
-이제 GAN, diffusion model이 각각 어떻게 작동하는지, GAN부터 살펴보자. GAN은 Generative Adversarial Network의 약자다. 생성형 모델과 그 대항마(Adversarial) 네트워크가 서로 경쟁하면서 학습되는 구조를 가지고 있다. 따라서 명확한 확률분포함수를 정의하지 않는 implicit model이다. Generator network는 random noise를 input으로 받아 이미지를 생성하고, discriminator network는 이미지를 input으로 하여, 해당 이미지가 진짜 이미지인지 생성된 이미지인지 구분한다.
+이제 GAN, diffusion model이 각각 어떻게 작동하는지, GAN부터 살펴보자. GAN은 Generative Adversarial Network의 약자다. 생성형 모델과 그 대항마(Adversarial) 네트워크가 서로 경쟁하면서 학습되는 구조를 가지고 있다. 확률분포함수에 대한 정의를 내리지 않으므로 implicit model이다. Generator network는 random noise를 input으로 받아 이미지를 생성하고, discriminator network는 이미지를 input으로 하여, 해당 이미지가 진짜 이미지인지 생성된 이미지인지 구분한다.
 
 <figure class="align-center">
   <img src="https://cdn.labellerr.com/GAN/All%20about%20GAN/vanillagan.webp" alt="GAN 모델의 아키텍처"
