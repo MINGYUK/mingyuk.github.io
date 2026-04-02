@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-repositories",
           title: "repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
@@ -113,6 +113,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-i-am-starting-my-intern-year-the-first-part-of-board-training-in-korea",
           title: 'I am starting my intern year, the first part of board training in...',
+          description: "",
+          section: "News",},{id: "news-i-got-accepted-to-the-residency-progam-at-the-department-of-general-surgery-seoul-national-university-hospital-i-ll-be-starting-my-new-position-on-september",
+          title: 'I got accepted to the residency progam at the department of general surgery,...',
           description: "",
           section: "News",},{id: "research-area-whole-slide-image-wsi-compression",
           title: 'Whole Slide Image (WSI) compression',
