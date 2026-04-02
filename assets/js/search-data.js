@@ -37,7 +37,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "post-current-obstacles-in-using-real-world-evidence-and-policy-wise-efforts-to-overcome-them",
+        },{id: "post-moka-pot-recipe",
+        
+          title: "Moka Pot Recipe",
+        
+        description: "Things I found out while using the Bialetti moka pots",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/moka-pot-recipe/";
+          
+        },
+      },{id: "post-수동-에스프레소-기계를-사고-싶다",
+        
+          title: "수동 에스프레소 기계를 사고 싶다",
+        
+        description: "일상 일기",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/diary/";
+          
+        },
+      },{id: "post-current-obstacles-in-using-real-world-evidence-and-policy-wise-efforts-to-overcome-them",
         
           title: "Current Obstacles in Using Real-World Evidence and Policy-wise Efforts to Overcome Them",
         
